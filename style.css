@@ -190,7 +190,7 @@ img {
 
 /* Hero Section */
 .hero {
-  background: url("../images/car-8157299_1920.jpg") no-repeat center center;
+  background: url("./images/car-8157299_1920.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
   padding-top: 70px; /* adjust if your navbar height is different */
