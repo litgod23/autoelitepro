@@ -8,16 +8,18 @@ window.addEventListener("scroll", function () {
 });
 
 const topInfoBar = document.querySelector(".top-info-bar");
+const mainNavbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY === 0) {
-    // Fully at the top
     topInfoBar.classList.remove("hidden");
+    mainNavbar.style.top = "40px";
   } else {
-    // Any scroll down hides the top info bar
     topInfoBar.classList.add("hidden");
+    mainNavbar.style.top = "0";
   }
 });
+;
  
 const toggleBtn = document.getElementById("topInfoToggle");
 const topInfoContent = document.getElementById("topInfoContent");
