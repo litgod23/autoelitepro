@@ -20,7 +20,7 @@ img {
 /* Header Styling */
 .navbar {
   position: fixed; /* instead of sticky */
-  top: 35px; /* Push it below the top bar */
+  top: 40px; /* Push it below the top bar */
   width: 100%;
   background-color: rgba(30, 30, 31, 0); /* fully transparent */
   color: white;
@@ -28,6 +28,9 @@ img {
   z-index: 1000;
   backdrop-filter: blur(1px); /* optional blur */
   -webkit-backdrop-filter: blur(10px);
+}
+.top-info-bar.hidden + .main-navbar {
+  top: 0;
 }
 
 .header-container {
@@ -121,6 +124,7 @@ img {
   z-index: 1001; /* higher than navbar */
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
+  height: 40px;
 }
 
 /* Container holds toggle + content */
